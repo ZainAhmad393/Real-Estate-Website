@@ -1,0 +1,310 @@
+:root {
+    --primary-color: #004E64;
+    --secondary-color: #F8F1F1;
+    --accent-color: #F9A826;
+    --background-color: #FFFFFF;
+    --text-color: #1A1A1A;
+}
+
+/* roots for fonts  */
+:root {
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #172f46;
+    overflow-x: hidden;
+
+}
+
+/* for dark mode  */
+body.dark-mode {
+    --primary-color: #1E3A8A;
+    --secondary-color: #1F2937;
+    --accent-color: #F97316;
+    --background-color: #111827;
+    --text-color: #F1F5F9;
+}
+
+/* styling for navbar  */
+
+.navbar-custom {
+    background-color: var(--primary-color);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--secondary-color);
+}
+
+.navbar-custom .navbar-brand {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: var(--accent-color);
+}
+
+.navbar-custom a {
+    font-size: 1.2rem;
+}
+
+.navbar-custom a:hover {
+    text-decoration: underline;
+    transition: 0.3s ease-in;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--accent-color);
+}
+
+.navbar-custom .buttonofnavbar {
+    font-family: var(--font-body);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.navbar-custom .buttonofnavbar:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+/* herosection styling */
+.aboutcontainer {
+    position: relative;
+}
+
+.aboutcontainer img {
+    filter: brightness(40%);
+}
+
+.aboutcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-30%);
+    width: 100%;
+    /* left: 30%; */
+}
+
+.aboutcontent h2 {
+    font-size: 3.5rem;
+    font-family: var(--font-heading);
+    text-align: center;
+    color: var(--secondary-color) !important;
+
+}
+
+.aboutcontainer h4 {
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+.aboutcontainer p {
+    color: var(--secondary-color);
+    text-align: center;
+    /* width: 100%; */
+    opacity: 0.8;
+}
+@media screen and (max-width:503px){
+    .aboutcontainer img{
+        height: 650px;
+    }
+}
+/* residential section styling  */
+.whosecheading {
+    margin-top: 150px;
+}
+
+.whosecheading h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+
+}
+
+.contentofwhoareyousection {
+    padding: 67px 20px;
+    background: #2D3F52;
+    filter: brightness(100%);
+    height: 500px;
+    color: white;
+    width: 100%;
+
+}
+
+.contentofwhosec p {
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+}
+.contentofwhosec ul li{
+    list-style-type:decimal-leading-zero;
+    padding: 10px 0px;
+    text-align: left;
+    opacity: 0.7;
+}
+.imagesection img {
+    width: 100%;
+    cursor: pointer;
+
+}
+
+/* construction sale and urban planning section styling  */
+.leadership-team {
+    margin-top: 100px;
+}
+
+.leadershipsec h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.team-card h5 , .team-card h6{
+    padding: 10px 0px;
+}
+.team-card img {
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(113, 155, 136);
+    height: 200px;
+    width: 100%;
+}
+
+.team-card {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.team-card p {
+    opacity: 0.8;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+/* footer section styling  */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 50px;
+
+}
+
+.footer-gridcontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.footer-gridcontainer h2 {
+  font-family: var(--font-heading);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 35px;
+}
+
+.footer-gridcontainer p {
+  text-align: center;
+  opacity: 0.8;
+}
+
+.quicklinks ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.quicklinks ul li {
+  padding: 8px 0;
+}
+
+.quicklinks ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.quicklinks ul li a:hover {
+  color: #ffd700;
+}
+
+.icons-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons-footer a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icons-footer a:hover {
+  transform: scale(1.1);
+  color: #ffd700;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.95rem;
+  background-color: var(--primary-color);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .footer-gridcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-gridcontainer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-gridcontainer p,
+  .footer-gridcontainer h2,
+  .quicklinks ul li {
+    text-align: center;
+  }
+}
+
+/* responisveness for hero section  */
+@media screen and (max-width:503px){
+    .aboutcontainer img{
+        height: 650px;
+    }
+}
+/* responisveness for residential development  */
+@media screen and (max-width:768px) {
+    .imagesection {
+        padding-top: 50px;
+    
+    }
+   
+}
+@media screen and (max-width:1075px) {
+     .contentofwhoareyousection{
+        height: auto;
+       
+    }
+    .contentofwhoareyousection p  {
+         text-align: center;
+         
+    }
+}
+
